@@ -7,6 +7,8 @@ This project is used to demonstrate a customer churn analysis using Clean Code b
 ## Files and data description
 
 The directory structure for the projects is as follows:
+
+```
 .
 ├── Guide.ipynb          # Provided by Udacity: Getting started and troubleshooting tips
 ├── churn_notebook.ipynb # Provided by Udacity: Contains the code to be refactored
@@ -21,6 +23,7 @@ The directory structure for the projects is as follows:
 │   └── results          # Store model training/testing results
 ├── logs                 # Store logs
 └── models               # Store models
+```
 
 The directory contains two primary submission artifacts from the project, the `churn_library.py` and `churn_script_logging_and_tests.py` files.
 - The `churn_library.py` module contains functions composed to complete the churn analysis. 
