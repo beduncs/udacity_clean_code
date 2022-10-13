@@ -1,0 +1,57 @@
+root - INFO - Imported DataFrame: 
+    Unnamed: 0  CLIENTNUM  ...   Avg_Utilization_Ratio  Churn
+0           0  768805383  ...                   0.061      0
+1           1  818770008  ...                   0.105      0
+2           2  713982108  ...                   0.000      0
+3           3  769911858  ...                   0.760      0
+4           4  709106358  ...                   0.000      0
+
+[5 rows x 23 columns]
+root - INFO - Testing import_data: SUCCESS
+root - INFO - Testing save_plot: SUCCESS
+root - INFO - Testing perform_eda: SUCCESS
+root - INFO - Encoded df:    Unnamed: 0         ...           Card_Category_Churn
+0           0         ...                      0.160979
+1           1         ...                      0.160979
+2           2         ...                      0.160979
+3           3         ...                      0.160979
+4           4         ...                      0.160979
+
+[5 rows x 28 columns]
+root - INFO - Encoded columns: ['Gender_Churn', 'Education_Level_Churn', 'Marital_Status_Churn', 'Income_Category_Churn', 'Card_Category_Churn']
+root - INFO - Testing encoder_helper: SUCCESS
+root - INFO - x_train:       Customer_Age         ...           Card_Category_Churn
+415             49         ...                      0.160979
+3749            61         ...                      0.160979
+9295            27         ...                      0.147748
+8290            52         ...                      0.160979
+7672            44         ...                      0.160979
+
+[5 rows x 19 columns]
+root - INFO - x_test:       Customer_Age         ...           Card_Category_Churn
+3781            48         ...                      0.160979
+2922            59         ...                      0.160979
+5070            37         ...                      0.160979
+7246            47         ...                      0.160979
+623             42         ...                      0.160979
+
+[5 rows x 19 columns]
+root - INFO - y_train: 415     0
+3749    0
+9295    0
+8290    0
+7672    1
+Name: Churn, dtype: int64
+root - INFO - y_test: 3781    0
+2922    0
+5070    0
+7246    0
+623     0
+Name: Churn, dtype: int64
+root - INFO - Testing perform_feature_engineering: SUCCESS
+root - INFO - tm_y_train_preds_rf: [0 0 0 ... 0 0 0], tm_y_test_preds_rf: [0 0 0 ... 0 0 0], tm_y_train_preds_lr: [0 0 0 ... 0 0 0], tm_y_test_preds_lr: [0 0 0 ... 0 0 1], 
+root - INFO - Testing train_models: SUCCESS
+root - INFO - Results image at: ./images/results/rf_results.jpg
+root - INFO - Testing classification_report_image: SUCCESS
+root - INFO - Results image at: ./images/results/rf_results.jpg
+root - INFO - Testing feature_importance_plot: SUCCESS
